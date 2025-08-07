@@ -16,3 +16,11 @@ jobs:
     with:
       upload-artifact: true
       upload-tag: ${{ github.ref_name }}
+      
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.token }} 
+          submodules: recursive
