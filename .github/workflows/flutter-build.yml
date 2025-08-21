@@ -89,6 +89,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Restore bridge files
@@ -310,6 +311,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Install LLVM and Clang
@@ -453,6 +455,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Install flutter
@@ -578,6 +581,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Import the codesign cert
@@ -873,6 +877,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Install flutter
@@ -1143,6 +1148,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Install flutter
@@ -1306,6 +1312,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Set Swap Space
@@ -1635,6 +1642,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Free Space
@@ -1827,6 +1835,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Download Binary
@@ -1900,6 +1909,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Download Binary
@@ -1961,6 +1971,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PRIVATE_SUBMODULE_TOKEN }}
           submodules: recursive
 
       - name: Prepare env
